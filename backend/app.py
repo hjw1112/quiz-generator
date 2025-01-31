@@ -1,5 +1,5 @@
 from flask import Flask, session, redirect, url_for, render_template
-from backend.route import routes
+from backend.routes.route import routes
 from dotenv import load_dotenv
 import os
 

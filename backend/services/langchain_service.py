@@ -11,7 +11,7 @@ from langchain.agents import AgentExecutor, create_tool_calling_agent
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-from config import Config
+from ..config.config import Config
 
 
 
@@ -72,8 +72,6 @@ def generate_quiz_with_internet(text):
         print("JSON not found.")
         return "error"
     
-response = generate_quiz_with_internet("chemistry")
-print(response)
 
 
 
