@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(235, 244, 252);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 160px;
+    color: rgb(52, 90, 123);
+    font-size: 38px;
+    margin-bottom: -20px;
+}
+
+#powered_by {
+    color: rgb(86, 140, 188);
+    margin-bottom: 40px;
+}
+
+#file_upload {
+    display: none;
+}
+
+#input-btn {
+    margin-bottom: 20px;
+    border: none;
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: rgb(148, 200, 245);
+    color: rgb(26, 72, 155);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#input-btn:hover {
+    background-color: rgb(138, 186, 229);
+}
+
+#submit_button {
+    border: none;
+    height: 26px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: rgb(214, 231, 209);
+    color: rgba(47, 83, 36, 0.795);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit_button:hover {
+    background-color: rgb(188, 207, 183);
+}
