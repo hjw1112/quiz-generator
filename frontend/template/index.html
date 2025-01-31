@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
     <div id="headerdiv">
@@ -13,6 +14,7 @@
     <p id="powered_by">Powered by OpenAI</p>
 
     <div class="inputdiv" id="imginput">
+        <button id="input-btn" onclick="document.getElementById('file_upload').click()">📎 Select File</button>
         <input type="file" id="file_upload" accept="image/*,.pdf,.csv,.doc,.docx,.txt" name="file input">
     </div>
     <button id="submit_button" class="button">Submit</button>
