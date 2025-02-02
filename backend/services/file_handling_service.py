@@ -10,7 +10,6 @@ def pdf_to_text(pdf_path):
     except Exception as e:
         return f"Error reading PDF: {str(e)}"
 
-
 def csv_to_text(csv_path):
     try:
         df = pd.read_csv(csv_path)
@@ -18,10 +17,17 @@ def csv_to_text(csv_path):
     except Exception as e:
         return f"Error reading CSV: {str(e)}"
 
-
 def doc_to_text(doc_path):
     try:
         doc = Document(doc_path)
         return "\n".join([para.text for para in doc.paragraphs]).strip()
     except Exception as e:
         return f"Error reading DOC/DOCX: {str(e)}"
+
+def txt_to_text(txt_path):
+    try:
+        with open(txt_path, "r", encoding="utf-8") as file:
+            return file.read().strip()
+    except Exception as e:
+        return f"Error reading TXT: {str(e)}"
+

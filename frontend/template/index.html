@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
     <div id="headerdiv">
@@ -13,12 +12,26 @@
     </div>
     <p id="powered_by">Powered by OpenAI</p>
 
-    <div class="inputdiv" id="imginput">
-        <button id="input-btn" onclick="document.getElementById('file_upload').click()">📎 Select File</button>
-        <input type="file" id="file_upload" accept="image/*,.pdf,.csv,.doc,.docx,.txt" name="file input">
-    </div>
-    <button id="submit_button" class="button">Submit</button>
+    <form id="form">
+        <label id="lable" for="method">Choose Method:</label>
+        <select id="method" name="method">
+            <option value="file">Upload File(Provide resource to AI, .pdf,.csv,.doc,.docx, or .txt)</option>
+            <option value="internet">Enter Topic(Enter simple topic and let AI search)</option>
+        </select>
 
+        <div id="fileUpload">
+            <button id="input_button" type="button">📎 Select File</button>
+            <input type="file" id="file_upload" accept="image/*,.pdf,.csv,.doc,.docx,.txt" name="file input">
+            <p id="file_name">No file selected</p>
+        </div>
+
+        <div id="topicInput" style="display: none;">
+            <input type="text" id="topic" name="topic" placeholder="Enter Topic">
+        </div>
+
+        <button id="submit_button" class="button" type="submit">Submit</button>
+    </form>
+    
     <div class="loader" id="loader"></div>
 
 

@@ -15,12 +15,27 @@ h1 {
     margin-bottom: 40px;
 }
 
+#lable {
+    font-family: sans-serif;
+}
+
 #file_upload {
     display: none;
 }
 
-#input-btn {
-    margin-bottom: 20px;
+#file_name {
+    font-family: sans-serif;
+}
+
+#topicInput {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#input_button {
+    margin-top: 10px;
+    margin-bottom: 0px;
     border: none;
     width: 120px;
     height: 36px;
@@ -32,8 +47,14 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-#input-btn:hover {
+#input_button:hover {
     background-color: rgb(138, 186, 229);
+}
+
+#file_name {
+    margin-top: 3px;
+    margin-right: 0px;
+    font-size: 11pt;
 }
 
 #submit_button {
@@ -50,3 +71,20 @@ h1 {
 #submit_button:hover {
     background-color: rgb(188, 207, 183);
 }
+
+.loader {
+    border: 5px solid #f3f3f371;
+    border-top: 5px solid #626262;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

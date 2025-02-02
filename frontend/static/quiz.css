@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(235, 244, 252);
+    text-align: left;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-top: 100px;
+    color: rgb(52, 90, 123);
+    font-size: 38px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.button {
+    border: none;
+    height: 26px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(188, 207, 183);
+}
+
+#score {
+    font-family: sans-serif;
+}
+.question {
+    font-family: sans-serif;
+}
+
+input {
+    font-family: inherit;
+}
+
+
+#submit_button {
+    background-color: rgb(214, 231, 209);
+    color: rgba(47, 83, 36, 0.795);
+}
+
+#submit_button:hover {
+    background-color: rgb(188, 207, 183);
+}
+
+#feedback_button {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: rgb(209, 227, 231);
+    color: rgba(56, 65, 117, 0.795);
+    width: 100px;
+}
+
+#feedback_button:hover {
+    background-color: rgb(183, 196, 207);
+}
+
+
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.unselected-wrong {
+    background-color: #f8d7da;
+    color: #724a1c;
+}
+
+
